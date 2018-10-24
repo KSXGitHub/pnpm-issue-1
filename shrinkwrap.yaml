@@ -1,0 +1,9 @@
+dependencies:
+  bar: 'link:packages/bar'
+  foo: 'link:packages/foo'
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  bar: 'file:./packages/bar'
+  foo: 'file:./packages/foo'

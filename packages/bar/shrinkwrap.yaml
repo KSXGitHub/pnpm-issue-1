@@ -1,0 +1,7 @@
+dependencies:
+  foo: 'link:../foo'
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 9
+shrinkwrapVersion: 3
+specifiers:
+  foo: 'file:../foo'
