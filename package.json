@@ -2,6 +2,8 @@
   "private": true,
   "dependencies": {
     "foo": "file:./packages/foo",
-    "bar": "file:./packages/bar"
+    "bar": "file:./packages/bar",
+    "chalk": "*",
+    "@types/node": "*"
   }
 }
