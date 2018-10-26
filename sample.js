@@ -6,19 +6,21 @@ const title = branch => [
   'node ./test.js'
 ].join(' ')
 
-const done = chalk.dim('done. (status: 0)')
+const done = status => status
+  ? chalk.red('error!') + ' ' + chalk.dim(`(status: ${status})`)
+  : chalk.dim('done.')
 
 console.log(`
   ${title('foo')}
     | Maecenas vitae lectus sit ...
     | Maecenas maximus arcu ...
     | Cras sed magna sed ...
-    ${done}
+    ${done(0)}
 
   ${title('bar')}
     | Maecenas vitae lectus sit ...
     | Maecenas maximus arcu ...
     | Cras sed magna sed ...
-    ${done}
+    ${done(1)}
 
 `)
